@@ -1,3 +1,5 @@
+
+#Create dictionary of caracters
 @caracters = {
     '.-' => 'A',
     '-...' => 'B',
@@ -27,4 +29,29 @@
     '--..' => 'Z'
   }
 
-  
+  #decode each letter
+  def letter_decoder(letter)
+    @caracters.each do |key, value|
+      if key == letter
+        return value
+      end
+    end
+  end
+
+  #decode each word
+  def word_decoder(word)
+    @current_word = word.split().map {|letter| letter_decoder(letter)}.join("")
+    "#{@current_word} "
+  end
+
+  #decode each sentence
+  def sentence_decoder(sentence)
+    @current_sentence = sentence.split('   ').map {|word| word_decoder(word)}.join("")
+    @current_sentence
+    print "#{@current_sentence}\n"
+  end
+
+  sentence_decoder('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+  sentence_decoder('.-  .-..  .  -..-  .-  -.  -..  .  .-.     ..  ...     ...  ..  -.-.  -.-')
+  sentence_decoder('.--  ---  .-.  .-  ...  ....     ..  ...     .-  .-..  .--  .-  -.--  ...     .-..  .-  -  .')
+  sentence_decoder('.--  ---  .-.  .-  ...  ....     ..  ...     .-     --.  ---  ---  -..     .--.  .-  .-.  -  -.  .  .-.     -...  ..-  -     ...  ....  ---  ..-  .-..  -..     -  .-.  -.--     -  ---     ..-.  ..  -..-  .  -..     ..  ...     ..  ...  ...  ..-  .')
