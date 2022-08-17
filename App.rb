@@ -48,7 +48,7 @@
   def sentence_decoder(sentence)
     @current_sentence = sentence.split('   ').map {|word| word_decoder(word)}.join("")
     @current_sentence
-    print "#{@current_sentence}\n"
+    print "#{@current_sentence.downcase} \n"
   end
 
   sentence_decoder('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
