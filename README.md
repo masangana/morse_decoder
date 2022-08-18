@@ -4,11 +4,10 @@
 
 > This is an educational project to decode a Morse code. A training for Ruby programming language.
 
-
 ## Built With
 
 - Ruby
--  Linter: Rubocop
+- Linter: Rubocop
 - VS Code
 
 ## Getting Started
@@ -16,15 +15,21 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
- - A web browser.
- - A code editor.
+
+- A web browser.
+- A code editor.
+
 ### Setup
+
 You can check if Git is installed by running the following command in the terminal.
+
 ```
 $ git --version
 $ ruby --version && irb
 ```
+
 ### Install
+
 ```
 $ gh repo clone masangana/morse_decoder
 ```
@@ -33,10 +38,9 @@ $ gh repo clone masangana/morse_decoder
 
 👤 **Alex Masangana**
 
-  - GitHub: [![GitHub Badge](https://img.shields.io/badge/-Alexander-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/masangana)
-  - Twitter: [![Twitter Badge](https://img.shields.io/badge/-Alexander-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/alexmasangana)
-  - Gmail: [![Gmail Badge](https://img.shields.io/badge/-@Alexander-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:alexmasangana@gmail.com)
-
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-Alexander-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/masangana)
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-Alexander-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/alexmasangana)
+- Gmail: [![Gmail Badge](https://img.shields.io/badge/-@Alexander-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:alexmasangana@gmail.com)
 
 👤 **Author2**
 
